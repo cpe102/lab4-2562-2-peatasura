@@ -29,7 +29,13 @@ int main()
 	while(count < 10){
 		//Edit code here using printString1() and printString2()
 		
+        printString1("5",9-count);
+		printString2("6","9",count);
+	
+		
+		
 		count++;
+		cout << "\n";
 	}
     return 0;
 }
