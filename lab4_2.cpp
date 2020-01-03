@@ -5,22 +5,21 @@ using namespace std;
 //Write function findDistance() here
 float findDistance()
   {
-    float u,a,t,s;
-    cout << "ENTER u:";
+    float u,a,t;
+    cout << "u=";
     cin >> u;
-    cout << "ENTER a:";
+    cout << "a=";
     cin >> a;
-    cout << "ENTER t:";
+    cout << "t=";
     cin >> t;
-    s=(u*t)+((a*(t*t))/2);
-    cout << "s=" << s;
+   float s=(u*t)+0.5*a*(pow(t,2));
+    return s;
 
 
   }
 int main(){
 
   //Calling findDistance() using test cases
-  cout << findDistance();
-
+  cout << "s="<< findDistance();
   return 0;
 }
